@@ -9,8 +9,8 @@
   --font-weights-light: 400;
   --font-weights-heavy: 700;
 
-  --card-padding: clamp(2ch, 1vw, 2rem);
-  --card-border-radius: clamp(3ch, 1.5vw, 3rem);
+  --card-padding: clamp(2ch, 1vw, 1rem);
+  --card-border-radius: 1.4rem;
 }
 
 body {
