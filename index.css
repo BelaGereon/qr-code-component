@@ -27,7 +27,7 @@ body {
 
 .card {
   width: max(300px, calc(20vw - 1rem * 2));
-  aspect-ratio: 2 / 3.1;
+  aspect-ratio: 2 / 3.3;
   background-color: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
@@ -42,4 +42,19 @@ img {
   background-size: cover;
   shape-margin: 0.75rem;
   border-radius: calc(var(--card-border-radius) - var(--card-padding));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Outfit";
+  text-align: center;
+}
+
+.description {
+  color: var(--color-grayisch-blue);
+  font-size: 15px;
+  width: 85%;
+  margin-top: -15px;
 }
