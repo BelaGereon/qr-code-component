@@ -5,12 +5,41 @@
   --color-dark-blue: hsl(218, 44%, 22%);
 
   --font-paragraph-size: 15px;
-  --font-family: url(https://fonts.google.com/specimen/Outfit);
   --font-weights-light: 400;
   --font-weights-heavy: 700;
+
+  --card-padding: clamp(2ch, 1vw, 2rem);
+  --card-border-radius: clamp(3ch, 1.5vw, 3rem);
 }
 
 body {
-  width: 100vw;
+  margin: 0;
+  padding: 0;
   background-color: var(--color-light-gray);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: max(300px, calc(20vw - 1rem * 2));
+  aspect-ratio: 2 / 3.1;
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+  border-radius: calc(var(--card-border-radius) - var(--card-padding));
 }
