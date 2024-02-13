@@ -9,3 +9,8 @@
   --font-weights-light: 400;
   --font-weights-heavy: 700;
 }
+
+body {
+  width: 100vw;
+  background-color: var(--color-light-gray);
+}
