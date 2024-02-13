@@ -3,6 +3,7 @@
   --color-light-gray: hsl(212, 45%, 89%);
   --color-grayisch-blue: hsl(220, 15%, 55%);
   --color-dark-blue: hsl(218, 44%, 22%);
+  --color-card-shadow: hsla(218, 44%, 22%, 0.1);
 
   --font-paragraph-size: 15px;
   --font-weights-light: 400;
@@ -26,11 +27,12 @@ body {
 }
 
 .card {
-  width: max(300px, calc(20vw - 1rem * 2));
+  width: 300px;
   aspect-ratio: 2 / 3.3;
   background-color: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
+  box-shadow: 0 4px 32px 0 var(--color-card-shadow);
 }
 
 img {
