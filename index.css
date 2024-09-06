@@ -16,17 +16,19 @@ body {
 }
 
 .card {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-
   width: 260px;
   padding: 20px;
   border-radius: 25px;
 
   background-color: var(--white);
+}
+
+.centered {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .card-content__container {
@@ -49,6 +51,7 @@ body {
 
   .text-content__description {
     width: 95%;
+    color: var(--grayish-blue);
   }
 }
 
