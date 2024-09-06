@@ -8,19 +8,15 @@ html {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: clamp(5px, 5%, 20px);
   font-family: "Outfit", sans-serif;
 }
 
-.card {
-  width: 260px;
-  padding: 20px;
-  border-radius: 25px;
-
-  background-color: var(--white);
+.flex-container__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .centered {
@@ -31,27 +27,26 @@ body {
   transform: translateY(-50%);
 }
 
-.card-content__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 25px;
 
-.text-content__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: var(--white);
 
-  .text-content__heading {
-    text-wrap: balance;
-    color: var(--dark-blue);
-  }
+  .text-content__container {
+    padding-top: 1rem;
+    text-align: center;
 
-  .text-content__description {
-    width: 95%;
-    color: var(--grayish-blue);
+    .text-content__heading {
+      text-wrap: balance;
+      color: var(--dark-blue);
+    }
+
+    .text-content__description {
+      width: 95%;
+      color: var(--grayish-blue);
+    }
   }
 }
 
